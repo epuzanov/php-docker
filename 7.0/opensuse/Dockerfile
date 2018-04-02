@@ -11,7 +11,7 @@ RUN mkdir -p /usr/lib/locale /var/www/html /usr/lib/cgi-bin && \
         php7-mbstring php7-memcached php7-mysql php7-opcache php7-pcntl \
         php7-pgsql php7-phar php7-posix php7-readline php7-sockets php7-sqlite \
         php7-sysvmsg php7-sysvsem php7-sysvshm php7-tokenizer php7-wddx \
-        php7-xmlreader php7-xmlwriter php7-xsl php7-zlib unixODBC && \
+        php7-xmlreader php7-xmlwriter php7-xsl php7-zlib rsvg-view unixODBC && \
     zypper clean -a && \
     localedef -i en_US -f UTF-8 en_US.UTF-8 && \
     sed -i "s/RC_LANG=\".*\"/RC_LANG=\"en_US.UTF-8\"/g" /etc/sysconfig/language && \

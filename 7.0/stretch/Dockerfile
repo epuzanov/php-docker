@@ -6,10 +6,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN set -x; apt-get update && \
     apt-get install -y --no-install-recommends apache2 apt-transport-https \
-        ca-certificates curl git gnupg libapache2-mod-php7.0 locales nmap \
-        php7.0-cli php7.0-curl php7.0-fpm php7.0-gd php7.0-intl php7.0-ldap \
-        php7.0-mbstring php7.0-mysql php7.0-pgsql php7.0-sqlite3 php7.0-xml \
-        php7.0-opcache php-apcu-bc php-memcached unixodbc && \
+        ca-certificates curl git gnupg libapache2-mod-php7.0 librsvg2-bin \
+        locales nmap php7.0-cli php7.0-curl php7.0-fpm php7.0-gd php7.0-intl \
+        php7.0-ldap php7.0-mbstring php7.0-mysql php7.0-pgsql php7.0-sqlite3 \
+        php7.0-xml php7.0-opcache php-apcu-bc php-memcached unixodbc && \
     echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen && \
     a2enmod macro && \
